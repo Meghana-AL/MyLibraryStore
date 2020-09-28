@@ -12,5 +12,9 @@ namespace MyLibraryStore.Controllers
         {
             return View();
         }
+        public IActionResult Meghana()
+        {
+            return Content("Hiiii Meghana.....");
+        }
     }
 }
