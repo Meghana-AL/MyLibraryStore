@@ -67,19 +67,19 @@ namespace MyLibraryStore.Controllers
             _bookRepos.DeleteBook(id);
             return RedirectToAction("Index", "Book");
         }
-        [NonAction]
-        public IEnumerable<SelectedListItem> GetGenre()
-        {
-            List<string> genre = new List<string>
-            {
-                "Classics","Horror","Comic","Action","Fantasy","Historic Fiction","Romantic"
-            };
-            var genres = genre.AsEnumerable().Select(x => new SelectedListItem
-            {
-                Text=x,
-                Value=x
-            });
-            return genres;
-        }
+        //[NonAction]
+        //public IEnumerable<SelectedListItem> GetGenre()
+        //{
+        //    List<string> genre = new List<string>
+        //    {
+        //        "Classics","Horror","Comic","Action","Fantasy","Historic Fiction","Romantic"
+        //    };
+        //    var genres = genre.AsEnumerable().Select(x => new SelectedListItem
+        //    {
+        //        Text=x,
+        //        Value=x
+        //    });
+        //    return genres;
+        //}
     }
 }
